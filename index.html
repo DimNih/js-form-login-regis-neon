@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN FORM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="styles.css">
+</head>
+<body>
+    <!-- Login Container -->
+    <div class="container" id="loginContainer">
+        <h2>Welcome Back</h2>
+        <div class="input-group">
+            <input type="email" id="loginEmail" placeholder="Email Address">
+        </div>
+        <p class="error" id="loginEmailError"></p>
+        
+        <div class="input-group">
+            <input type="password" id="loginPassword" placeholder="Password">
+        </div>
+        <p class="error" id="loginPasswordError"></p>
+        
+        <button onclick="validateLogin()">Sign In</button>
+        <p class="toggle" onclick="toggleForm()">Create New Account</p>
+    </div>
+
+    <!-- Register Container -->
+    <div class="container" id="registerContainer" style="display: none;">
+        <h2>Create Account</h2>
+        <div class="input-group">
+            <input type="text" id="registerName" placeholder="Full Name">
+        </div>
+        <p class="error" id="registerNameError"></p>
+        
+        <div class="input-group">
+            <input type="email" id="registerEmail" placeholder="Email Address">
+        </div>
+        <p class="error" id="registerEmailError"></p>
+        
+        <div class="input-group">
+            <input type="password" id="registerPassword" placeholder="Password">
+        </div>
+        <p class="error" id="registerPasswordError"></p>
+        
+        <button onclick="validateRegister()">Sign Up</button>
+        <p class="toggle" onclick="toggleForm()">Already have an account?</p>
+    </div>
+
+    <script src="bekend.js">   </script>
+</body>
+</html>
